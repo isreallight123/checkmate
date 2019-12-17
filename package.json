@@ -1,0 +1,25 @@
+{
+  "name": "checkmate",
+  "version": "1.0.0",
+  "description": "Final project for the odp 3.0 program",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/style.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelechi-Okorie/checkmate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelechi-Okorie/checkmate/issues"
+  },
+  "homepage": "https://github.com/Kelechi-Okorie/checkmate#readme"
+}
