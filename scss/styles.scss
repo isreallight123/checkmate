@@ -2,14 +2,20 @@
 
 @import "variables";
 
+
 @import "small-default";
 
-// 35rem is same as 560px (if base-font size is 16px)
+// 35rem is same as 560px (if base font is 16px)
 @media only screen and (min-width: 35rem) {
     @import "medium";
 }
 
-// 64rem is same as 1024 (if base-font size is 16px)
+@media only screen and (min-width: 37rem) {
+    @import "medium";
+}
+
+
+// 64rem is same as 1024px (if base font is 16px)
 @media only screen and (min-width: 64rem) {
     @import "large";
 }
