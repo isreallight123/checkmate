@@ -1,0 +1,61 @@
+/* HEADER */
+header#top-header {
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    padding: 8px $gutter 5px;
+    height: 70px;
+
+    div#top-header-menu {
+        margin-left: auto;
+        div#hamburger {
+            display: none;
+    
+        }
+    }
+}
+
+
+/* BODY */
+div#body {
+    display: flex;
+    padding-top: 70px;
+
+    aside {
+        position: fixed;
+        top: auto;
+        left: auto;
+        // flex-basis: 15%;
+        width: 100px;
+
+        div#aside-background {
+            display: none;
+        }
+
+        div#aside-container {
+            position: relative;
+            width: 100%;
+
+            div#aside-header {
+                display: none;
+
+                div#header-body {
+                    p {
+                        overflow-y: hidden;
+                    }
+                }
+            }
+        }
+
+        div#close-btn {
+            display: none;
+        }
+    }
+
+    main {
+        flex-basis: 75%;
+        margin-left: 100px;
+    }
+
+}
