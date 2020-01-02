@@ -1,0 +1,66 @@
+/* HEADER */
+div#body {
+    main#index {
+        div#login-header {
+            background-color: $menuColor;
+            margin: 0 auto;
+            padding-top: 10px;
+            color: white;
+
+            figure {
+                width: 33.33%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        div#login-body {
+            margin: 0 $dblGutter;
+            padding: $gutter;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+
+            header {
+                color: white;
+                margin-bottom: 50px;
+
+                div {
+                    text-align: center;
+                    padding: 7px 0;
+                }
+            }
+
+            form {
+                div#btn-submit {
+                    text-align: center;
+
+                    button {
+                        width: 50%;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+/* NAVIGATION */
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}

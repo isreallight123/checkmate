@@ -131,82 +131,137 @@ header#top-header {
         height: 100%; }
 
 /* MAIN */
-div#body aside {
-  position: fixed;
-  top: 0;
-  left: -560px;
-  width: 100%;
-  height: 100vh;
-  background-color: transparent; }
-  div#body aside div#aside-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: transparent; }
-  div#body aside div#aside-container {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    background-color: white;
-    border: 1px solid #b4b3b3; }
-    div#body aside div#aside-container div#aside-header {
-      color: black;
-      padding: 7px 2% 20px 2%;
-      width: 100%;
-      border-bottom: 0.2px solid #cccccc; }
-      div#body aside div#aside-container div#aside-header div#header-top {
-        display: flex;
-        font-size: 3.5rem;
-        justify-content: space-between; }
-        div#body aside div#aside-container div#aside-header div#header-top figure {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%; }
-          div#body aside div#aside-container div#aside-header div#header-top figure img {
-            width: 100%;
-            height: 100%; }
-      div#body aside div#aside-container div#aside-header div#header-body p {
-        font-size: 1.2rem;
-        line-height: 22px;
-        overflow-x: hidden; }
-      div#body aside div#aside-container div#aside-header div#header-body p:first-child {
-        font-weight: bold; }
-    div#body aside div#aside-container div#aside-body {
-      display: flex;
-      padding-top: px;
-      padding-left: 2%;
-      font-size: 1.7rem;
-      color: black; }
-      div#body aside div#aside-container div#aside-body ul {
-        list-style-type: none; }
-        div#body aside div#aside-container div#aside-body ul li {
-          border: 0;
-          padding: 0; }
-          div#body aside div#aside-container div#aside-body ul li a {
-            display: block;
-            width: 100%;
-            padding: 12px 0; }
-            div#body aside div#aside-container div#aside-body ul li a i {
-              display: inline-block;
-              margin-right: 25px; }
-  div#body aside.open {
-    left: 0px;
-    transition: left 0.5s; }
-  div#body aside.close {
+div#body {
+  /* MAIN starts here */ }
+  div#body aside {
+    position: fixed;
+    top: 0;
     left: -560px;
-    transition: left 0.5s; }
-
-div#body main {
-  padding: 5px 2% 0 2%; }
-  div#body main div#test {
-    display: flex; }
+    width: 100%;
+    height: 100vh;
+    background-color: transparent; }
+    div#body aside div#aside-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.15); }
+    div#body aside div#aside-container {
+      position: relative;
+      width: 80%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid #b4b3b3; }
+      div#body aside div#aside-container div#aside-header {
+        color: black;
+        padding: 7px 2% 20px 2%;
+        width: 100%;
+        border-bottom: 0.2px solid #cccccc; }
+        div#body aside div#aside-container div#aside-header div#header-top {
+          display: flex;
+          font-size: 3.5rem;
+          justify-content: space-between; }
+          div#body aside div#aside-container div#aside-header div#header-top figure {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; }
+            div#body aside div#aside-container div#aside-header div#header-top figure img {
+              width: 100%;
+              height: 100%; }
+        div#body aside div#aside-container div#aside-header div#header-body p {
+          font-size: 1.2rem;
+          line-height: 22px;
+          overflow-x: hidden; }
+        div#body aside div#aside-container div#aside-header div#header-body p:first-child {
+          font-weight: bold; }
+      div#body aside div#aside-container div#aside-body {
+        display: flex;
+        padding-top: px;
+        padding-left: 2%;
+        font-size: 1.7rem;
+        color: black; }
+        div#body aside div#aside-container div#aside-body ul {
+          list-style-type: none; }
+          div#body aside div#aside-container div#aside-body ul li {
+            border: 0;
+            padding: 0; }
+            div#body aside div#aside-container div#aside-body ul li a {
+              display: block;
+              width: 100%;
+              padding: 12px 0; }
+              div#body aside div#aside-container div#aside-body ul li a i {
+                display: inline-block;
+                margin-right: 25px; }
+    div#body aside.open {
+      left: 0px;
+      transition: left 0.5s; }
+    div#body aside.close {
+      left: -560px;
+      transition: left 0.5s; }
+  div#body main section.intern {
+    display: flex;
+    padding: 5px 2%;
+    border: 0.2px solid #cccccc; }
+    div#body main section.intern div.intern-bio {
+      display: flex; }
+      div#body main section.intern div.intern-bio figure {
+        width: 30px;
+        height: 30px; }
+        div#body main section.intern div.intern-bio figure img {
+          width: 100%;
+          height: 100%; }
 
 /* FOOTER */
+footer {
+  background-color: #003C6C;
+  color: white;
+  width: 100%;
+  padding: 15px 0; }
+  footer div p {
+    text-align: center; }
+
 /* clearfix */
 .clearfix:after {
   content: "";
   display: block;
   clear: both; }
+
+/* HEADER */
+div#body main#index div#login-header {
+  background-color: #003C6C;
+  margin: 0 auto;
+  padding-top: 10px;
+  color: white; }
+  div#body main#index div#login-header figure {
+    width: 33.33%;
+    margin: 0 auto; }
+    div#body main#index div#login-header figure img {
+      width: 100%; }
+  div#body main#index div#login-header p {
+    text-align: center; }
+
+div#body main#index div#login-body {
+  margin: 0 4%;
+  padding: 2%;
+  font-size: 1.2rem;
+  margin-bottom: 20px; }
+  div#body main#index div#login-body header {
+    color: white;
+    margin-bottom: 50px; }
+    div#body main#index div#login-body header div {
+      text-align: center;
+      padding: 7px 0; }
+  div#body main#index div#login-body form div#btn-submit {
+    text-align: center; }
+    div#body main#index div#login-body form div#btn-submit button {
+      width: 50%; }
+
+/* NAVIGATION */
+/* MAIN */
+/* FOOTER */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px; }
 
 @media only screen and (min-width: 35rem) {
   /* HEADER */
@@ -243,41 +298,28 @@ div#body main {
         display: none; }
     div#body main {
       flex-basis: 75%;
-      margin-left: 100px; } }
-
-@media only screen and (min-width: 37rem) {
+      margin-left: 100px; }
+    div#body main#index {
+      flex-basis: 100%;
+      margin: 0; }
   /* HEADER */
-  header#top-header {
+  /* NAVIGATION */
+  /* MAIN */
+  div#body div#login-header {
     display: flex;
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    padding: 8px 2% 5px;
-    height: 70px; }
-    header#top-header div#top-header-menu {
-      margin-left: auto; }
-      header#top-header div#top-header-menu div#hamburger {
-        display: none; }
-  /* BODY */
-  div#body {
-    display: flex;
-    padding-top: 70px; }
-    div#body aside {
-      position: fixed;
-      top: auto;
-      left: auto;
-      width: 100px; }
-      div#body aside div#aside-background {
-        display: none; }
-      div#body aside div#aside-container {
-        position: relative;
+    align-items: center;
+    justify-content: flex-start; }
+    div#body div#login-header figure {
+      width: 35px !important;
+      margin: 0 0 !important;
+      margin-left: 2% !important; }
+      div#body div#login-header figure img {
         width: 100%; }
-        div#body aside div#aside-container div#aside-header {
-          display: none; }
-          div#body aside div#aside-container div#aside-header div#header-body p {
-            overflow-y: hidden; }
-      div#body aside div#close-btn {
-        display: none; }
-    div#body main {
-      flex-basis: 75%;
-      margin-left: 100px; } }
+    div#body div#login-header p {
+      margin-left: 2%; }
+  div#body div#login-body form {
+    width: 50%;
+    margin: 0 auto; }
+  /* FOOTER */
+  footer {
+    bottom: 0px; } }

@@ -59,6 +59,7 @@ header#top-header {
 
 /* MAIN */
 div#body {
+
     aside {
         position: fixed;
         top: 0;
@@ -71,7 +72,7 @@ div#body {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: transparent;
+            background-color: rgba(0, 0, 0, 0.15);
         }
 
         div#aside-container {
@@ -162,15 +163,47 @@ div#body {
 
     }
 
+    /* MAIN starts here */
     main {
-        padding: 5px $gutter 0 $gutter;
-        div#test {
+        section.intern {
             display: flex;
+            padding: 5px $gutter;
+            border: $borderBottom;
+
+            div.intern-bio {
+                display: flex;
+
+                figure {
+                    width: 30px;
+                    height: 30px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+
         }
     }
+
 }
 
 /* FOOTER */
+
+footer {
+    background-color: $menuColor;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    div {
+        p {
+            text-align: center;
+        }   
+    }
+
+}
 
 /* clearfix */
 .clearfix:after {
@@ -178,4 +211,3 @@ div#body {
     display: block;
     clear:both;
 }
-

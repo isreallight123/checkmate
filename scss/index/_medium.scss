@@ -1,0 +1,43 @@
+/* HEADER */
+header#header-top {
+    
+}
+
+/* NAVIGATION */
+
+/* MAIN */
+div#body {
+    div#login-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        figure {
+            width: 35px !important;
+            margin: 0 0 !important;
+            margin-left: $gutter !important;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            margin-left: $gutter;
+        }
+    }
+    div#login-body {
+        form {            
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    // position: relative;
+    bottom: 0px;
+    // width: 50%;
+    // margin: 0 auto;
+}
