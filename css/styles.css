@@ -250,6 +250,8 @@ div#body main#index div#login-body {
     div#body main#index div#login-body header div {
       text-align: center;
       padding: 7px 0; }
+  div#body main#index div#login-body form input {
+    margin-top: 7px; }
   div#body main#index div#login-body form div#btn-submit {
     text-align: center; }
     div#body main#index div#login-body form div#btn-submit button {
@@ -318,8 +320,16 @@ footer {
     div#body div#login-header p {
       margin-left: 2%; }
   div#body div#login-body form {
-    width: 50%;
-    margin: 0 auto; }
-  /* FOOTER */
-  footer {
-    bottom: 0px; } }
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 0 7px 0 black;
+    padding: 7px 12px; }
+  /* FOOTER */ }
+
+@media only screen and (min-width: 64rem) {
+  /* HEADER begins here */
+  /* NAVIGATION begins here */
+  /* MAIN begins here */
+  div#body div#login-body form {
+    width: 45%; }
+  /* FOOTER begins here */ }
