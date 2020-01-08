@@ -8,7 +8,7 @@
 
     <!-- links to css files -->
     <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 
 
 </head>

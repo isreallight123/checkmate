@@ -200,15 +200,57 @@ div#body {
   div#body main section.intern {
     display: flex;
     padding: 5px 2%;
-    border: 0.2px solid #cccccc; }
+    border: 0.2px solid #cccccc;
+    border-left: 0; }
     div#body main section.intern div.intern-bio {
-      display: flex; }
+      display: flex;
+      align-items: center;
+      flex-basis: 80%; }
       div#body main section.intern div.intern-bio figure {
         width: 30px;
         height: 30px; }
         div#body main section.intern div.intern-bio figure img {
           width: 100%;
           height: 100%; }
+      div#body main section.intern div.intern-bio div#intern-info {
+        margin-left: 2%; }
+        div#body main section.intern div.intern-bio div#intern-info div.status {
+          display: flex;
+          width: 100%; }
+          div#body main section.intern div.intern-bio div#intern-info div.status div.progress {
+            background-color: yellowgreen;
+            width: 80%;
+            margin: 0 4%; }
+    div#body main section.intern div.intern-actions {
+      flex-basis: 20%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.6em;
+      color: #003C6C; }
+      div#body main section.intern div.intern-actions div#check {
+        display: flex;
+        margin-right: 4%;
+        background-color: white;
+        transition: transform 0.5s; }
+        div#body main section.intern div.intern-actions div#check div.check-action {
+          background-color: white; }
+        div#body main section.intern div.intern-actions div#check div.check-action:last-child {
+          transform: rotateY(180deg); }
+  div#body section#test {
+    transition: transform 1s;
+    width: 60px;
+    height: auto; }
+    div#body section#test div {
+      width: 50px;
+      height: 50px; }
+    div#body section#test .green {
+      background-color: green; }
+    div#body section#test .yellow {
+      position: relative;
+      background-color: yellow;
+      top: -50px; }
+    div#body section#test:hover {
+      transform: rotateY(180deg); }
 
 /* FOOTER */
 footer {
@@ -225,11 +267,26 @@ footer {
   display: block;
   clear: both; }
 
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html {
+  font-family: Verdana;
+  width: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* HEADER */
 div#body main#index div#login-header {
   background-color: #003C6C;
   margin: 0 auto;
-  padding-top: 10px;
+  padding: 10px 0;
   color: white; }
   div#body main#index div#login-header figure {
     width: 33.33%;
@@ -263,7 +320,12 @@ div#body main#index div#login-body {
 footer {
   position: fixed;
   width: 100%;
-  bottom: 0px; }
+  bottom: 0px;
+  background-color: #003C6C;
+  color: white;
+  padding: 15px 0; }
+  footer div p {
+    text-align: center; }
 
 @media only screen and (min-width: 35rem) {
   /* HEADER */
@@ -283,30 +345,24 @@ footer {
     display: flex;
     padding-top: 70px; }
     div#body aside {
-      position: fixed;
+      position: relative;
+      flex-basis: 25%;
       top: auto;
       left: auto;
-      width: 100px; }
+      border-left: 0; }
       div#body aside div#aside-background {
         display: none; }
       div#body aside div#aside-container {
-        position: relative;
         width: 100%; }
-        div#body aside div#aside-container div#aside-header {
-          display: none; }
-          div#body aside div#aside-container div#aside-header div#header-body p {
-            overflow-y: hidden; }
-      div#body aside div#close-btn {
-        display: none; }
+      div#body aside div#header-top {
+        display: none !important; }
     div#body main {
-      flex-basis: 75%;
-      margin-left: 100px; }
-    div#body main#index {
-      flex-basis: 100%;
-      margin: 0; }
+      flex-basis: 75%; }
   /* HEADER */
   /* NAVIGATION */
   /* MAIN */
+  div#body main#index {
+    flex-basis: 100%; }
   div#body div#login-header {
     display: flex;
     align-items: center;
@@ -331,5 +387,4 @@ footer {
   /* NAVIGATION begins here */
   /* MAIN begins here */
   div#body div#login-body form {
-    width: 45%; }
-  /* FOOTER begins here */ }
+    width: 45%; } }

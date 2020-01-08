@@ -23,45 +23,26 @@ div#body {
     padding-top: 70px;
 
     aside {
-        position: fixed;
+        position: relative;
+        flex-basis: 25%;
         top: auto;
         left: auto;
-        // flex-basis: 15%;
-        width: 100px;
+        border-left: 0;
 
         div#aside-background {
             display: none;
         }
 
         div#aside-container {
-            position: relative;
             width: 100%;
-
-            div#aside-header {
-                display: none;
-
-                div#header-body {
-                    p {
-                        overflow-y: hidden;
-                    }
-                }
-            }
         }
 
-        div#close-btn {
-            display: none;
+        div#header-top {
+            display: none !important;
         }
     }
 
     main {
         flex-basis: 75%;
-        margin-left: 100px;
     }
-
-    main#index {
-        flex-basis: 100%;
-        margin: 0;
-
-    }
-
 }

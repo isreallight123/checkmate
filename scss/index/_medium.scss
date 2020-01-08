@@ -7,6 +7,10 @@ header#header-top {
 
 /* MAIN */
 div#body {
+    main#index {
+        flex-basis: 100%;
+    }
+
     div#login-header {
         display: flex;
         align-items: center;
