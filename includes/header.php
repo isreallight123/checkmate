@@ -61,11 +61,11 @@
             </div>
             <div id="aside-body">
                 <ul>
-                    <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                    <li><a href="#"><i class="fas fa-user fa-fw"></i>Profile</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard fa-fw"></i>Notice Board</a></li>
+                    <li><a href="#"><i class="fas fa-comments fa-fw"></i>Evaluation Form</a></li>
+                    <li><a href="#"><i class="fas fa-users fa-fw"></i>Attendance</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-check fa-fw"></i>Assignments</a></li>
                 <ul>
                 <ul>
                     <li><a><i class="fas fa-cog"></i>Settings</a></li>

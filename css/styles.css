@@ -123,12 +123,14 @@ header#top-header {
       color: white; }
       header#top-header div#top-header-menu a:link {
         text-decoration: none; }
-    header#top-header div#top-header-menu div#user-img figure {
-      width: 50px;
-      height: 50px; }
-      header#top-header div#top-header-menu div#user-img figure img {
-        width: 100%;
-        height: 100%; }
+    header#top-header div#top-header-menu div#user-img {
+      display: none; }
+      header#top-header div#top-header-menu div#user-img figure {
+        width: 50px;
+        height: 50px; }
+        header#top-header div#top-header-menu div#user-img figure img {
+          width: 100%;
+          height: 100%; }
 
 /* MAIN */
 div#body {
@@ -175,9 +177,8 @@ div#body {
           font-weight: bold; }
       div#body aside div#aside-container div#aside-body {
         display: flex;
-        padding-top: px;
         padding-left: 2%;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         color: black; }
         div#body aside div#aside-container div#aside-body ul {
           list-style-type: none; }
@@ -187,7 +188,8 @@ div#body {
             div#body aside div#aside-container div#aside-body ul li a {
               display: block;
               width: 100%;
-              padding: 12px 0; }
+              padding: 12px 0;
+              color: black; }
               div#body aside div#aside-container div#aside-body ul li a i {
                 display: inline-block;
                 margin-right: 25px; }
@@ -199,7 +201,7 @@ div#body {
       transition: left 0.5s; }
   div#body main section.intern {
     display: flex;
-    padding: 5px 2%;
+    padding: 8px 2%;
     border: 0.2px solid #cccccc;
     border-left: 0; }
     div#body main section.intern div.intern-bio {
@@ -207,50 +209,40 @@ div#body {
       align-items: center;
       flex-basis: 80%; }
       div#body main section.intern div.intern-bio figure {
-        width: 30px;
-        height: 30px; }
+        width: 35px;
+        height: 35px; }
         div#body main section.intern div.intern-bio figure img {
           width: 100%;
           height: 100%; }
       div#body main section.intern div.intern-bio div#intern-info {
-        margin-left: 2%; }
+        margin-left: 2%;
+        width: 100%; }
+        div#body main section.intern div.intern-bio div#intern-info p {
+          font-style: bold;
+          margin-bottom: 3px; }
         div#body main section.intern div.intern-bio div#intern-info div.status {
           display: flex;
           width: 100%; }
           div#body main section.intern div.intern-bio div#intern-info div.status div.progress {
-            background-color: yellowgreen;
             width: 80%;
-            margin: 0 4%; }
+            height: 15px;
+            border: 0.2px solid #cccccc;
+            margin: 0 4%;
+            background-color: red; }
+            div#body main section.intern div.intern-bio div#intern-info div.status div.progress div.progress-background {
+              width: 80%;
+              height: 15px;
+              background-color: green; }
     div#body main section.intern div.intern-actions {
       flex-basis: 20%;
       display: flex;
       justify-content: flex-end;
-      font-size: 1.6em;
+      font-size: 2em;
       color: #003C6C; }
-      div#body main section.intern div.intern-actions div#check {
-        display: flex;
-        margin-right: 4%;
-        background-color: white;
-        transition: transform 0.5s; }
-        div#body main section.intern div.intern-actions div#check div.check-action {
-          background-color: white; }
-        div#body main section.intern div.intern-actions div#check div.check-action:last-child {
-          transform: rotateY(180deg); }
-  div#body section#test {
-    transition: transform 1s;
-    width: 60px;
-    height: auto; }
-    div#body section#test div {
-      width: 50px;
-      height: 50px; }
-    div#body section#test .green {
-      background-color: green; }
-    div#body section#test .yellow {
-      position: relative;
-      background-color: yellow;
-      top: -50px; }
-    div#body section#test:hover {
-      transform: rotateY(180deg); }
+      div#body main section.intern div.intern-actions div:last-child {
+        margin: 0 2% 0 15%; }
+      div#body main section.intern div.intern-actions div.check-action {
+        background-color: white; }
 
 /* FOOTER */
 footer {
@@ -267,66 +259,6 @@ footer {
   display: block;
   clear: both; }
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-html {
-  font-family: Verdana;
-  width: 100%; }
-
-/*  apply a natural box layout model to all elements  */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* HEADER */
-div#body main#index div#login-header {
-  background-color: #003C6C;
-  margin: 0 auto;
-  padding: 10px 0;
-  color: white; }
-  div#body main#index div#login-header figure {
-    width: 33.33%;
-    margin: 0 auto; }
-    div#body main#index div#login-header figure img {
-      width: 100%; }
-  div#body main#index div#login-header p {
-    text-align: center; }
-
-div#body main#index div#login-body {
-  margin: 0 4%;
-  padding: 2%;
-  font-size: 1.2rem;
-  margin-bottom: 20px; }
-  div#body main#index div#login-body header {
-    color: white;
-    margin-bottom: 50px; }
-    div#body main#index div#login-body header div {
-      text-align: center;
-      padding: 7px 0; }
-  div#body main#index div#login-body form input {
-    margin-top: 7px; }
-  div#body main#index div#login-body form div#btn-submit {
-    text-align: center; }
-    div#body main#index div#login-body form div#btn-submit button {
-      width: 50%; }
-
-/* NAVIGATION */
-/* MAIN */
-/* FOOTER */
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  background-color: #003C6C;
-  color: white;
-  padding: 15px 0; }
-  footer div p {
-    text-align: center; }
-
 @media only screen and (min-width: 35rem) {
   /* HEADER */
   header#top-header {
@@ -340,6 +272,8 @@ footer {
       margin-left: auto; }
       header#top-header div#top-header-menu div#hamburger {
         display: none; }
+      header#top-header div#top-header-menu div#user-img {
+        display: block; }
   /* BODY */
   div#body {
     display: flex;
@@ -349,7 +283,8 @@ footer {
       flex-basis: 25%;
       top: auto;
       left: auto;
-      border-left: 0; }
+      border-left: 0;
+      height: 81vh; }
       div#body aside div#aside-background {
         display: none; }
       div#body aside div#aside-container {
@@ -357,34 +292,4 @@ footer {
       div#body aside div#header-top {
         display: none !important; }
     div#body main {
-      flex-basis: 75%; }
-  /* HEADER */
-  /* NAVIGATION */
-  /* MAIN */
-  div#body main#index {
-    flex-basis: 100%; }
-  div#body div#login-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-    div#body div#login-header figure {
-      width: 35px !important;
-      margin: 0 0 !important;
-      margin-left: 2% !important; }
-      div#body div#login-header figure img {
-        width: 100%; }
-    div#body div#login-header p {
-      margin-left: 2%; }
-  div#body div#login-body form {
-    width: 75%;
-    margin: 0 auto;
-    box-shadow: 0 0 7px 0 black;
-    padding: 7px 12px; }
-  /* FOOTER */ }
-
-@media only screen and (min-width: 64rem) {
-  /* HEADER begins here */
-  /* NAVIGATION begins here */
-  /* MAIN begins here */
-  div#body div#login-body form {
-    width: 45%; } }
+      flex-basis: 75%; } }

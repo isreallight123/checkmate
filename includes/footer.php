@@ -6,6 +6,6 @@
 </footer>
 
 
-<script src="js/index.js"></script>
+<script src="js/dashboard.js"></script>
 <body>
 </html>

@@ -43,6 +43,8 @@ header#top-header {
         }
 
         div#user-img {
+            display: none;
+            
             figure {
                 width: 50px;
                 height: 50px;
@@ -123,9 +125,8 @@ div#body {
 
             div#aside-body {
                 display: flex;
-                padding-top: px;
                 padding-left: $gutter;
-                font-size: 1.7rem;
+                font-size: 1.2rem;
                 color: black;
 
                 ul {
@@ -138,6 +139,7 @@ div#body {
                             display: block;
                             width: 100%;
                             padding: 12px 0;
+                            color: black;
 
                             i {
                                 display: inline-block;
@@ -167,7 +169,7 @@ div#body {
     main {
         section.intern {
             display: flex;
-            padding: 5px $gutter;
+            padding: 8px $gutter;
             border: $borderBottom;
             border-left: 0;
             
@@ -177,8 +179,8 @@ div#body {
                 flex-basis: 80%;
 
                 figure {
-                    width: 30px;
-                    height: 30px;
+                    width: 35px;
+                    height: 35px;
 
                     img {
                         width: 100%;
@@ -188,15 +190,29 @@ div#body {
                 
                 div#intern-info {
                     margin-left: $gutter;
+                    width: 100%;
+
+                    p {
+                        font-style: bold;
+                        margin-bottom: 3px;
+                    }
                     
                     div.status {
                         display: flex;
                         width: 100%;
 
                         div.progress {
-                            background-color: yellowgreen;
                             width: 80%;
+                            height: 15px;
+                            border: $borderBottom;
                             margin: 0 $dblGutter;
+                            background-color: red;
+
+                            div.progress-background {
+                                width: 80%;
+                                height: 15px;
+                                background-color: green;
+                            }
                         }
                     }
                 }
@@ -207,29 +223,15 @@ div#body {
                 flex-basis: 20%;
                 display: flex;
                 justify-content: flex-end;
-                font-size: 1.6em;
+                font-size: 2em;
                 color: $menuColor;
 
-                div#check {
-                    display: flex;
-                    margin-right: $dblGutter;
+                div:last-child {
+                    margin: 0 $gutter 0 15%;
+                }
+
+                div.check-action {
                     background-color: white;
-                    transition: transform 0.5s;
-
-
-                    div.check-action {
-                        background-color: white;
-
-                    }
-                    
-                    div.check-action:first-child {
-                    }
-                    
-                    div.check-action:last-child {
-                        // position: absolute;
-                        transform: rotateY(180deg);
-                    }
-
                 }
 
             }
@@ -237,28 +239,6 @@ div#body {
         }
     }
 
-    section#test {
-        transition: transform 1s;
-        width: 60px;
-        height: auto;
-        div {
-            width: 50px;
-            height: 50px;
-        }
-        .green {
-            background-color: green;
-        }
-        
-        .yellow {
-            position: relative;
-            background-color: yellow;
-            top: -50px;
-        }
-
-        &:hover {
-            transform: rotateY(180deg);
-        }
-    }
 
 }
 
