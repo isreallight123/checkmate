@@ -44,7 +44,7 @@ header#top-header {
 
         div#user-img {
             display: none;
-            
+
             figure {
                 width: 50px;
                 height: 50px;
@@ -87,7 +87,7 @@ div#body {
             div#aside-header {
                 // background-color: lighten($menuColor, 5%);
                 color: black;
-                padding: 7px $gutter 20px $gutter;
+                padding: 7px $gutter 10px $gutter;
                 width: 100%;
                 border-bottom: $borderBottom;
 
@@ -95,6 +95,7 @@ div#body {
                     display: flex;
                     font-size: 3.5rem;
                     justify-content: space-between;
+                    margin-bottom: 8px;
 
                     figure {
                         width: 100px;
@@ -111,9 +112,12 @@ div#body {
 
                 div#header-body {
                     p {
-                        font-size: 1.2rem;
-                        line-height: 22px;
-                        overflow-x: hidden;
+                        line-height: 18px;
+                        overflow: hidden;
+                    }
+
+                    p#email, p#stack {
+                        font-size: 0.9rem;
                     }
 
                     p:first-child {
@@ -131,23 +135,40 @@ div#body {
 
                 ul {
                     list-style-type: none;
+                    width: 100%;
+
                     li {
                         border: 0;
                         padding: 0;
-
+                    
                         a {
                             display: block;
                             width: 100%;
                             padding: 12px 0;
                             color: black;
+                            cursor: pointer;
+                            text-decoration: none;
 
                             i {
                                 display: inline-block;
                                 margin-right: 25px;
                             }
 
-                        }
+                            &:hover {
+                                color: white;
+                            }
 
+                            &.active {
+                                background-color: lighten($menuColor, 20%);
+                                color: white; 
+                            }
+                        }
+                        
+                        
+                        
+                        &:hover {
+                            background-color: lighten($menuColor, 10%);
+                        }
                     }
                 }
             }
@@ -166,7 +187,14 @@ div#body {
     }
 
     /* MAIN starts here */
-    main {
+    article {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+    article#attendance-content {
         section.intern {
             display: flex;
             padding: 8px $gutter;

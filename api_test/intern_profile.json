@@ -1,0 +1,13 @@
+{
+    "name": "Kelechi Okorie",
+    "email": "kelechiokorie22@gmail.com",
+    "stack": "Fullstack",
+    "attendance": {
+        "daysAttended": "88",
+        "totalNoOfDays": "100"
+    },
+    "assignments": {
+        "assignmentsSubmitted": "22",
+        "totalNoOfAssignmentsGiven": "30"
+    }
+}

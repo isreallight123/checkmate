@@ -155,13 +155,14 @@ div#body {
       border: 1px solid #b4b3b3; }
       div#body aside div#aside-container div#aside-header {
         color: black;
-        padding: 7px 2% 20px 2%;
+        padding: 7px 2% 10px 2%;
         width: 100%;
         border-bottom: 0.2px solid #cccccc; }
         div#body aside div#aside-container div#aside-header div#header-top {
           display: flex;
           font-size: 3.5rem;
-          justify-content: space-between; }
+          justify-content: space-between;
+          margin-bottom: 8px; }
           div#body aside div#aside-container div#aside-header div#header-top figure {
             width: 100px;
             height: 100px;
@@ -170,9 +171,10 @@ div#body {
               width: 100%;
               height: 100%; }
         div#body aside div#aside-container div#aside-header div#header-body p {
-          font-size: 1.2rem;
-          line-height: 22px;
-          overflow-x: hidden; }
+          line-height: 18px;
+          overflow: hidden; }
+        div#body aside div#aside-container div#aside-header div#header-body p#email, div#body aside div#aside-container div#aside-header div#header-body p#stack {
+          font-size: 0.9rem; }
         div#body aside div#aside-container div#aside-header div#header-body p:first-child {
           font-weight: bold; }
       div#body aside div#aside-container div#aside-body {
@@ -181,7 +183,8 @@ div#body {
         font-size: 1.2rem;
         color: black; }
         div#body aside div#aside-container div#aside-body ul {
-          list-style-type: none; }
+          list-style-type: none;
+          width: 100%; }
           div#body aside div#aside-container div#aside-body ul li {
             border: 0;
             padding: 0; }
@@ -189,59 +192,72 @@ div#body {
               display: block;
               width: 100%;
               padding: 12px 0;
-              color: black; }
+              color: black;
+              cursor: pointer;
+              text-decoration: none; }
               div#body aside div#aside-container div#aside-body ul li a i {
                 display: inline-block;
                 margin-right: 25px; }
+              div#body aside div#aside-container div#aside-body ul li a:hover {
+                color: white; }
+              div#body aside div#aside-container div#aside-body ul li a.active {
+                background-color: #0075d2;
+                color: white; }
+            div#body aside div#aside-container div#aside-body ul li:hover {
+              background-color: #00589f; }
     div#body aside.open {
       left: 0px;
       transition: left 0.5s; }
     div#body aside.close {
       left: -560px;
       transition: left 0.5s; }
-  div#body main section.intern {
+  div#body article {
+    display: none; }
+    div#body article.active {
+      display: block; }
+  div#body article#attendance-content section.intern {
     display: flex;
     padding: 8px 2%;
     border: 0.2px solid #cccccc;
     border-left: 0; }
-    div#body main section.intern div.intern-bio {
+    div#body article#attendance-content section.intern div.intern-bio {
       display: flex;
       align-items: center;
       flex-basis: 80%; }
-      div#body main section.intern div.intern-bio figure {
+      div#body article#attendance-content section.intern div.intern-bio figure {
         width: 35px;
         height: 35px; }
-        div#body main section.intern div.intern-bio figure img {
+        div#body article#attendance-content section.intern div.intern-bio figure img {
           width: 100%;
           height: 100%; }
-      div#body main section.intern div.intern-bio div#intern-info {
+      div#body article#attendance-content section.intern div.intern-bio div#intern-info {
         margin-left: 2%;
         width: 100%; }
-        div#body main section.intern div.intern-bio div#intern-info p {
+        div#body article#attendance-content section.intern div.intern-bio div#intern-info p {
           font-style: bold;
           margin-bottom: 3px; }
-        div#body main section.intern div.intern-bio div#intern-info div.status {
+        div#body article#attendance-content section.intern div.intern-bio div#intern-info div.status {
           display: flex;
           width: 100%; }
-          div#body main section.intern div.intern-bio div#intern-info div.status div.progress {
+          div#body article#attendance-content section.intern div.intern-bio div#intern-info div.status div.progress {
             width: 80%;
             height: 15px;
             border: 0.2px solid #cccccc;
             margin: 0 4%;
             background-color: red; }
-            div#body main section.intern div.intern-bio div#intern-info div.status div.progress div.progress-background {
+            div#body article#attendance-content section.intern div.intern-bio div#intern-info div.status div.progress div.progress-background {
               width: 80%;
               height: 15px;
               background-color: green; }
-    div#body main section.intern div.intern-actions {
+    div#body article#attendance-content section.intern div.intern-actions {
       flex-basis: 20%;
       display: flex;
       justify-content: flex-end;
       font-size: 2em;
       color: #003C6C; }
-      div#body main section.intern div.intern-actions div:last-child {
+      div#body article#attendance-content section.intern div.intern-actions div:last-child {
         margin: 0 2% 0 15%; }
-      div#body main section.intern div.intern-actions div.check-action {
+      div#body article#attendance-content section.intern div.intern-actions div.check-action {
         background-color: white; }
 
 /* FOOTER */
@@ -291,5 +307,5 @@ footer {
         width: 100%; }
       div#body aside div#header-top {
         display: none !important; }
-    div#body main {
+    div#body article.article-top {
       flex-basis: 75%; } }

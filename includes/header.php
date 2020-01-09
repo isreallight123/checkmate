@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="fonts/material-icons/material-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="Shortcut icon" href="imgs/oluaka.png">
+    <link rel="Shortcut icon" href="oluaka_favicon.png">
 
 </head>
 <body>
@@ -53,19 +53,19 @@
                     <div id="close-btn"><span>&times;</span></div>
                 </div>
                 <div id="header-body">
-                    <p>Kelechi Okorie</p>
-                    <p>kelechiokorie22@gmail.com</p>
-                    <p>Full stack engineer</p>
+                    <p id="name">Kelechi Okorie</p>
+                    <p id="email">kelechiokorie22@gmail.com</p>
+                    <p id="stack">Full stack engineer</p>
                 </div>
 
             </div>
             <div id="aside-body">
                 <ul>
-                    <li><a href="#"><i class="fas fa-user fa-fw"></i>Profile</a></li>
-                    <li><a href="#"><i class="fas fa-chalkboard fa-fw"></i>Notice Board</a></li>
-                    <li><a href="#"><i class="fas fa-comments fa-fw"></i>Evaluation Form</a></li>
-                    <li><a href="#"><i class="fas fa-users fa-fw"></i>Attendance</a></li>
-                    <li><a href="#"><i class="fas fa-calendar-check fa-fw"></i>Assignments</a></li>
+                    <li><a href="#" id="profile"><i class="fas fa-user fa-fw"></i>Profile</a></li>
+                    <li><a href="#" id="notice-board"><i class="fas fa-chalkboard fa-fw"></i>Notice Board</a></li>
+                    <li><a href="#" id="evaluation-form"><i class="fas fa-comments fa-fw"></i>Evaluation Form</a></li>
+                    <li><a href="#" id="attendance" class="active"><i class="fas fa-users fa-fw"></i>Attendance</a></li>
+                    <li><a href="#" id="assignments"><i class="fas fa-calendar-check fa-fw"></i>Assignments</a></li>
                 <ul>
                 <ul>
                     <li><a><i class="fas fa-cog"></i>Settings</a></li>
