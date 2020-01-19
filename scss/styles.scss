@@ -3,13 +3,26 @@
 @import "common/html5reset-1.6.1";
 
 @import "small-default";
+@import "profile/small-default";
+@import "noticeboard/small-default";
+@import "evaluation-form/small-default";
 
 // 35rem is same as 560px (if base font is 16px)
-@media only screen and (min-width: 35rem) {
+@media screen and (min-width: 35rem) {
     @import "medium";
+    @import "profile/medium";
+    @import "noticeboard/medium";
+    @import "evaluation-form/medium";
+}
+
+@media screen and (min-width: 48rem) {
+    @import "medium-768";
 }
 
 // 64rem is same as 1024px (if base font is 16px)
-@media only screen and (min-width: 64rem) {
+@media screen and (min-width: 64rem) {
     @import "large";
+    @import "profile/large";
+    @import "noticeboard/large";
+    @import "evaluation-form/large";
 }

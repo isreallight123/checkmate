@@ -25,7 +25,10 @@ header#top-header {
         font-size: 1.3rem;
         line-height: 28px;
 
-        div:nth-child(2) {
+        // div:nth-child(2) {
+        //     margin-left: 35px;
+        // }
+        div {
             margin-left: 35px;
         }
 
@@ -69,6 +72,7 @@ div#body {
         width: 100%;
         height: 100vh;
         background-color: transparent;
+        z-index: 10000;
 
         div#aside-background {
             position: absolute;
@@ -187,13 +191,6 @@ div#body {
     }
 
     /* MAIN starts here */
-    article {
-        display: none;
-
-        &.active {
-            display: block;
-        }
-    }
     article#attendance-content {
         section.intern {
             display: flex;
@@ -205,11 +202,11 @@ div#body {
                 display: flex;
                 align-items: center;
                 flex-basis: 80%;
-
+    
                 figure {
                     width: 35px;
                     height: 35px;
-
+    
                     img {
                         width: 100%;
                         height: 100%;
@@ -219,7 +216,7 @@ div#body {
                 div#intern-info {
                     margin-left: $gutter;
                     width: 100%;
-
+    
                     p {
                         font-style: bold;
                         margin-bottom: 3px;
@@ -228,14 +225,14 @@ div#body {
                     div.status {
                         display: flex;
                         width: 100%;
-
+    
                         div.progress {
                             width: 80%;
                             height: 15px;
                             border: $borderBottom;
                             margin: 0 $dblGutter;
                             background-color: red;
-
+    
                             div.progress-background {
                                 width: 80%;
                                 height: 15px;
@@ -246,30 +243,30 @@ div#body {
                 }
                 
             }
-
+    
             div.intern-actions {
                 flex-basis: 20%;
                 display: flex;
                 justify-content: flex-end;
                 font-size: 2em;
                 color: $menuColor;
-
+    
                 div:last-child {
                     margin: 0 $gutter 0 15%;
                 }
-
+    
                 div.check-action {
                     background-color: white;
                 }
-
+    
             }
-
+    
         }
     }
+    
 
 
 }
-
 /* FOOTER */
 
 footer {

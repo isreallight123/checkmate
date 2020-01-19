@@ -1,3 +1,7 @@
+
+let currentPage = window.location.href;
+currentPage = currentPage.slice(currentPage.lastIndexOf('/') + 1, currentPage.length - 4);
+
 const hamburger = document.querySelector('#hamburger');
 
 const aside = document.querySelector('#aside');
@@ -5,7 +9,6 @@ const aside = document.querySelector('#aside');
 const closeBtn = document.querySelector('#close-btn');
 const asideBackground = document.querySelector('div#aside-background');
 
-const checkAction = document.querySelector('.check-action');
 
 /* select the menus */
 const profile = document.querySelector('#profile');
@@ -33,41 +36,34 @@ closeBtn.addEventListener('click', closeAside);
 
 asideBackground.addEventListener('click', closeAside);
 
-checkAction.addEventListener('click', () => {
-    const attendanceStatus = document.querySelector(".check-action > i");
-    if(attendanceStatus.className === "fas fa-question-circle"){
-        attendanceStatus.className = "fas fa-check-circle";
-    } else {
-        attendanceStatus.className = "fas fa-question-circle";
-    }
-});
 
 /**
  * selects the menu content to display
 */
-const selectMenu = (e) => {
+((e) => {
     /* remove active class from all the menu contents */
-    profileContent.classList.remove('active');
-    noticeBoardContent.classList.remove('active');
-    evaluationFormContent.classList.remove('active');
-    attendanceContent.classList.remove('active');
-    assignmentsContent.classList.remove('active');
+    // profileContent.classList.remove('active');
+    // noticeBoardContent.classList.remove('active');
+    // evaluationFormContent.classList.remove('active');
+    // attendanceContent.classList.remove('active');
+    // assignmentsContent.classList.remove('active');
 
     /* remove active class from all the menus */
-    profile.classList.remove('active');
-    noticeBoard.classList.remove('active');
-    evaluationForm.classList.remove('active');
-    attendance.classList.remove('active');
-    assignments.classList.remove('active');
+    // profile.classList.remove('active');
+    // noticeBoard.classList.remove('active');
+    // evaluationForm.classList.remove('active');
+    // attendance.classList.remove('active');
+    // assignments.classList.remove('active');
 
     /* display the currently selected menu content */
-    menuId = e.target.id;
-    switch(menuId) {
+
+    console.log(currentPage);
+    switch(currentPage) {
         case 'profile' :
             profileContent.classList.add('active');
             profile.classList.add('active');
             break;
-        case 'notice-board' :
+        case 'noticeboard' :
             noticeBoardContent.classList.add('active');
             noticeBoard.classList.add('active');
             break;
@@ -92,10 +88,12 @@ const selectMenu = (e) => {
     if(window.innerWidth < 560) {
         closeAside();
     }
-}
+})();
+
 
 /* wire up the event listeners for the menu items */
 profile.addEventListener('click', (e) => {
+
     selectMenu(e);
 });
 

@@ -1,3 +1,4 @@
+
 </div> <!-- closes the div#body -->
 
 <!-- FOOTER starts here -->
@@ -6,6 +7,6 @@
 </footer>
 
 
-<script src="js/dashboard.js"></script>
+<script src="js/index.js"></script>
 <body>
 </html>

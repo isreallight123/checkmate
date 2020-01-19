@@ -24,33 +24,9 @@
 
 </article> <!-- Attendance ends here -->
 
-<!-- Profile starts here -->
-<article id="profile-content" class="article-top">
-    <section>
-        <p>profile here</p>
-    </section>
-</article> <!-- Profile ends here -->
 
-<!-- Notice board starts here -->
-<article id="notice-board-content" class="article-top">
-    <section>
-        <p>Notice board here</p>
-    </section>
-</article> <!-- Notice board ends here -->
 
-<!-- Evaluation form starts here -->
-<article id="evaluation-form-content" class="article-top">
-    <section>
-        <p>Evaluation form here</p>
-    </section>
-</article> <!-- Evaluation form ends here -->
 
-<!-- Assignments starts here -->
-<article id="assignments-content" class="article-top">
-    <section>
-        <p>Assignments here</p>
-    </section>
-</article> <!-- Assignments ends here -->
 
 
 <?php
