@@ -9,7 +9,10 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -w scss/style.scss -o css"
+    "scss1": "node-sass -w scss/styles.scss -o css",
+    "scss2": "node-sass -w scss/index/index.scss -o css",
+    "scss": "npm run scss1 & npm run scss2",
+    "localtunnel": "lt --port 8000"
   },
   "repository": {
     "type": "git",

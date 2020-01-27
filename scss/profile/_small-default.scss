@@ -1,0 +1,37 @@
+article#profile-content {
+    // padding: 0 0 12px 0;
+
+    section#profile-bio {
+        // border: 1px solid $regularColor;
+        background-color: $regularColor;
+        color: white;
+    }
+    section.profile-item {
+        width: 90%;
+        margin: 0 auto 20px;
+        border-radius: 7px;
+
+        div.profile-item-header {
+            background-color: $primaryColor;
+            padding: 7px $gutter;
+            font-size: 1.1rem;
+        }
+
+        div.profile-item-body {
+            width: 70%;
+            margin: 0 auto 15px;
+        }
+
+        div.profile-item-footer {
+            display: flex;
+            background-color: rgb(243, 113, 113);
+            justify-content: space-between; 
+            padding: 7px $gutter;
+
+            p {
+                margin: 0 $dblGutter;
+            }
+        }
+    }
+}
+

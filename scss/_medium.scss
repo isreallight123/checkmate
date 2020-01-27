@@ -1,3 +1,53 @@
-body {
-    background-color: yellow;
+/* HEADER */
+header#top-header {
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    padding: 8px $gutter 5px;
+    height: 70px;
+
+    div#top-header-menu {
+        margin-left: auto;
+        div#hamburger {
+            display: none;
+    
+        }
+
+        div#user-img {
+            display: block;
+        }
+    }
+}
+
+
+/* BODY */
+div#body {
+    display: flex;
+    padding-top: 70px;
+
+    aside {
+        position: relative;
+        flex-basis: 25%;
+        top: auto;
+        left: auto;
+        border-left: 0;
+        height: 81vh;
+
+        div#aside-background {
+            display: none;
+        }
+
+        div#aside-container {
+            width: 100%;
+        }
+
+        div#header-top {
+            display: none !important;
+        }
+    }
+
+    article.article-top {
+        flex-basis: 75%;
+    }
 }
